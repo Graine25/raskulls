@@ -8,3 +8,7 @@ out_directory_path = "generated"
 includes = [
   "skull_config.toml",
 ]
+
+# Verify these??????
+setjmp_address = 0x824A0CC0
+longjmp_address = 0x824A0880
