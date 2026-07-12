@@ -85,7 +85,6 @@
 0x821A4D40 = { size = 0x4 }
 0x821A4EB0 = { size = 0xA0 }
 0x821A4F50 = { size = 0x1D8 }
-0x821A67A8 = { size = 0x198 }
 0x821A6978 = { size = 0x8C }
 0x821A9848 = { size = 0x8 }
 0x821A9D80 = { size = 0x34 }
@@ -1481,6 +1480,58 @@
 0x8261E090 = { size = 0x10C }
 0x82621270 = { size = 0x188 }
 0x826390F8 = { size = 0x108 }
+
+0x82190900 = { name = "D3DDevice_SetIndices" }
+0x8218c658 = { name = "D3DDevice_SetRingBufferParameters" }
+0x82197878 = { name = "D3DDevice_DrawVertices" }
+0x82197c68 = { name = "D3DDevice_DrawIndexedVertices" }
+0x821916d0 = { name = "D3DDevice_EndTiling" }
+0x82193b68 = { name = "D3DDevice_SetTexture" }
+0x82190758 = { name = "D3DDevice_SetStreamSource" }
+0x821937a8 = { name = "D3DDevice_CreateTexture" }
+0x82196eb8 = { name = "D3DDevice_BeginVertices" }
+0x8219b048 = { name = "D3DDevice_ClearF" }
+0x821905e0 = { name = "D3DDevice_SetScissorRect" }
+0x8218C570 = { name = "D3DDevice_IsFencePending" }
+0x821906d8 = { name = "D3DDevice_SetViewport" }
+0x82190ce0 = { name = "D3DDevice_SetDepthStencilSurface" }
+0x82194360 = { name = "D3DDevice_CreatePixelShader" }
+0x82194450 = { name = "D3DDevice_SetPixelShader" }
+0x82194708 = { name = "D3DDevice_CreateVertexShader" }
+0x821947f8 = { name = "D3DDevice_SetVertexShader" }
+0x82190990 = { name = "D3DDevice_SetRenderTarget" }
+0x8219ED68 = { name = "D3DDevice_Resolve" } 
+0x82191378 = { name = "D3DDevice_Swap" }
+
+0x8218dd88 = { name = "D3D_SetSurfaceClip" }
+0x8218b128 = { name = "D3D_RingBufferDeviceAllocate" }
+0x821962f8 = { name = "D3D_DirectShaderPatch" }
+0x821a6e08 = { name = "D3D_InitializeXps" }
+0x821a67a8 = { name = "D3D_WorkerThread", size = 0x198  }
+0x8219b450 = { name = "D3D_InitializePresentationParameters" }
+0x82196058 = { name = "D3D_IncrementalShaderPatchAndLoad" }
+0x8219c5e0 = { name = "D3D_MakeBufferResourceSpace" }
+0x8219cb98 = { name = "D3D_FlushCachedMemory" }
+0x82195768 = { name = "D3D_PatchVertexShaderToMatchVertexDeclaration" }
+0x8219a8d8 = { name = "D3D_ClearF" }
+0x8219b8b0 = { name = "D3D_InitializeHardwareDevice" }
+0x8219B170 = { name = "D3D_InitializeApiState" }
+0x821A6FA8 = { name = "D3D_XenonGpu_Initialize" }
+0x82196438 = { name = "D3D_SetPending_Shaders" }
+0x8218e078 = { name = "D3D_SetViewport" }
+0x821a52d0 = { name = "D3D_PixSyncronizeToPresentationInterval" }
+0x8218bc88 = { name = "D3D_SetFence" }
+0x8218dbd0 = { name = "D3D_ResetAllState" }
+0x821a64e8 = { name = "D3D_DispatchWorker" }
+0x821a6318 = { name = "D3D_DispatchCompletion" }
+
+0x8218bfd8 = { name = "CDevice_KickOff" }
+0x8218b358 = { name = "CDevice_BeginRingAlloc" }
+0x8218AD68 = { name = "CDevice_BeginRingBig" }
+0x8218c0d8 = { name = "CDevice_BlockOnFence" }
+
+0x823fbae0 = { name = "CImage_LoadPNG" }
+0x821949e0 = { name = "XGSetVertexDeclaration" }
 
 [[switch_tables]]
 address = 0x822368EC
