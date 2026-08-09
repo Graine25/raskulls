@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include <rex/filesystem.h>
 #include <rex/rex_app.h>
 
 class SkullApp : public rex::ReXApp {
@@ -26,7 +27,12 @@ class SkullApp : public rex::ReXApp {
     rex::PathConfig paths = defaults;
     const std::string root = rex::cvar::GetFlagByName("ras_data_root");
     if (!root.empty()) {
-      paths.game_data_root = root;
+      std::filesystem::path resolved = rex::to_path(root);
+      if (resolved.is_relative()) {
+        resolved = std::filesystem::weakly_canonical(
+            rex::filesystem::GetExecutableFolder() / resolved);
+      }
+      paths.game_data_root = resolved;
     }
     return paths;
   }
